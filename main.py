@@ -440,7 +440,6 @@ class Visualizer:
 
 
 def main():
-
     bool_show = True 
     perf_stats = False
     timelapse = False 
