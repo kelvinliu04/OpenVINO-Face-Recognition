@@ -106,6 +106,7 @@ class FrameProcessor:
     QUEUE_SIZE = 16
 
     def __init__(self, m_fd, m_lm, m_reid, fg, bool_show, t_fd=0.6):
+        # Config
         d_fd, d_lm, d_reid = 'CPU', 'CPU', 'CPU'
         cpu_lib = ""
         gpu_lib = ""
@@ -118,9 +119,7 @@ class FrameProcessor:
         run_detector = True
         allow_grow = False
         
-        
-        
-        
+
         used_devices = set([d_fd, d_lm, d_reid])
         self.context = InferenceContext()
         context = self.context
